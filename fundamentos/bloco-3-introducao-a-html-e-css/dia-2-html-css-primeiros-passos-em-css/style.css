@@ -1,0 +1,21 @@
+h1 {
+    font-family: sans-serif;
+    color: orange;
+    width: 65px;
+    font-style: italic;
+}
+ul {
+    background-color: brown;
+    line-height: 30px;
+    text-decoration-color: blueviolet ;
+}
+.classe1 {
+    background-color: aquamarine;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+body {
+    font-size: 16px;
+}
