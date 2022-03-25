@@ -1,19 +1,18 @@
-// SELETORES
-const INPUT_TEXT = document.querySelector("#input-text");
-const INPUT_CHECKBOX = document.querySelector("#input-checkbox");
-const HREF_LINK = document.querySelector("#href");
-
-function nadaAcon(event) {
+function disabilita(event) {
     event.preventDefault()
 }
+document.getElementById("btn").addEventListener("click", disabilita);
 
-function nadaAcona(event) {
-    if (event.key != "a") {
-        event.preventDefault()
+document.getElementById("limpa").addEventListener("click", apaga);
+
+let inps = document.getElementsByTagName("input");
+
+function apaga() {
+    for (i = 0; i < inps.length; i +=1){
+        inps[i].value = ""
     }
+    for (i = 0; i < inps.length; i +=1){
+        inps[i].checked = 0
+    }
+    document.getElementById("texto").value = ""
 }
-
-HREF_LINK.addEventListener("click", nadaAcon);
-INPUT_CHECKBOX.addEventListener("click", nadaAcon);
-
-INPUT_TEXT.addEventListener("keypress", nadaAcona);
