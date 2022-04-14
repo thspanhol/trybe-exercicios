@@ -8,6 +8,6 @@ const pessoas = [
     {nome: 'Pacheco', id: 22},
 ]
 
-const teste = pessoas.reduce((par1, par2) => par1 + par2.id );
+const teste = pessoas.reduce((par1, par2) => par1 + par2.id, 0 );
 
 console.log(teste);
