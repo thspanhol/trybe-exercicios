@@ -1,0 +1,33 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+article {
+    flex: 1;
+}
+aside {
+    width: 500px;
+}
+body {
+    font-size: x-large;
+    padding-left: 2%;
+    background-color: #71dbd2;
+}
+nav {
+    padding-left: 2%;
+}
+a {
+    background-color: orange;
+    color: black;
+    border: 2px solid black;
+}
+a:hover {
+    background-color: aliceblue;
+}
+footer a {
+    background-color: green;
+}
